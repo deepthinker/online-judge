@@ -1,0 +1,35 @@
+	<pre id=ques_txt>
+
+	Password
+
+	Danny has a possible list of passwords of Manny's facebook account. All passwords length is odd. But Danny
+	knows that Manny is a big fan of palindromes. So, his password and reverse of his password both should be 
+	in the list.
+
+	You have to print the length of Manny's password and it's middle character.
+
+	Note : The solution will be unique.
+
+	INPUT
+	The first line of input contains the integer N, the number of possible passwords.
+	Each of the following N lines contains a single word, its length being an odd number greater than 2 and 
+	lesser than 14. All characters are lowercase letters of the English alphabet.
+
+	OUTPUT
+	The first and only line of output must contain the length of the correct password and its central letter.
+
+	CONSTRAINTS
+	1 ≤ N ≤ 100
+	Sample Input (Plaintext Link)
+	4
+	abc
+	def
+	feg
+	cba
+	Sample Output (Plaintext Link)
+	3 b
+	Time Limit 1 sec(s) (Time limit is for each input file.)
+	Memory Limit 256 MB
+	Source Limit 1024 KB
+	
+</pre>

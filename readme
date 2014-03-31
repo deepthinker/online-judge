@@ -1,0 +1,7 @@
+You can use this project to host online coding contest on your local server.
+
+Open the login.html page in the browser to get started .
+
+You can load your question in the ques file.
+
+Import the database to your phpmadmin. 

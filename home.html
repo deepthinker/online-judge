@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	
+	var xmlhttp;
+		if (window.XMLHttpRequest)
+		{															
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{															
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		submission();
+	function submission()
+	{
+			xmlhttp.onreadystatechange = function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200){  // ajax module
+				alert(xmlhttp.responseText);
+				if(xmlhttp.responseText==1)
+				{
+					var myWindow = window.open("home.html","_self");   //to open the home page
+				}
+				else 
+				{
+					document.getElementById("error").innerHTML="login failed";
+					form.reset();                               //to reset form
+				}
+
+			}
+		}
+		
+		var str="update.php";
+		xmlhttp.open("GET", str, true);
+		xmlhttp.send(null);	
+		return false;
+	}
+	</script>
+	<style>
+	body
+	{
+		background: #563c55 url(images/blurred.jpg) no-repeat center top;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+</head>
+<body>
+<div id="main">
+	<div id="ques">
+		<table id="qdisp">
+			<tr>
+				<td class="heading" style="width:500px;margin-left:50px;">Problme Name</td>
+				<td class="heading" style="width:300px;margin-left:50px;">Submissions</td>
+			</tr>
+			<tr>
+				<td><a href="http://www.w3schools.com">Visit W3Schools.com!</a><hr></td>
+			</tr>
+			<tr>
+				<td><a href="http://www.w3schools.com">Visit W3Schools.com!</a><hr></td>
+			</tr>
+			<tr>
+				<td><a href="http://www.w3schools.com">Visit W3Schools.com!</a><hr></td>
+			</tr>
+		</table>
+	</div>
+	<div id="instr">
+	</div>
+</div>
+<div id="sidebar">
+</div>
+
+</body>
+</html>
